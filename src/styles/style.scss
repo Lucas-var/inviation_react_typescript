@@ -1,0 +1,86 @@
+@import 'config';
+@import 'buttons';
+
+.App {
+    text-align: center;
+
+    .List {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 55rem;
+    margin: 0rem auto;
+    border: 0.1rem solid rgba(0, 0, 0, 0.233);
+    padding: .5rem;
+    justify-content: space-between;
+    background-color: $primary-color;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+
+        .List-header {
+        display: flex;
+        align-items: center;
+        }
+
+        img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+        }
+ 
+        img:hover {
+        border-radius: 100%;
+        transform: scale(1.7);
+        z-index:2;
+        }
+
+        h2, h3 {
+        color: rgb(37, 36, 36);
+        margin-left: 50px;
+        font-family: $font-stack;
+        }
+
+        h4 {
+        font-family: $font-stack;
+        margin-left: 60px;
+        }
+
+        .note {
+        width: 35%;
+        text-align: left;
+        }
+    }
+
+    .AddToList {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: 5rem auto;
+
+        input, textarea {
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin: 0.3rem 0rem;
+            border-radius: 5px;
+            background-color: $secondary-color;
+        }
+
+        button {
+            padding: 0.5rem;
+            cursor: pointer;
+            background-color: rgb(39, 105, 37);
+            font-weight: 700;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(64, 161, 59);
+        }
+        
+        
+    }
+}

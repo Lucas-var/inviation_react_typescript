@@ -1,0 +1,23 @@
+%btn {
+    padding: 0.5rem;
+    cursor: pointer;
+    // background-color: rgb(39, 105, 37);
+    font-weight: 700;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgb(64, 161, 59);
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: rgb(39, 105, 37) ;
+}
+
+.btn-secondary {
+    @extend %btn;
+}
