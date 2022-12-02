@@ -4,14 +4,14 @@ import List from './components/List';
 import AddToList from './components/AddToList';
 
 export interface IEmployee {
-  name: string
-  url: string
-  position: string
-  year: string | number
-  note?: string
+    name: string
+    url: string
+    position: string
+    year: string | number
+    note?: string
 }
 
-function App (): JSX.Element {
+function App(): JSX.Element {
     const [employees, setEmployees] = useState<IEmployee[]>([
         {
             name: 'Lucas Vargas',
@@ -27,7 +27,7 @@ function App (): JSX.Element {
     return (
         <div className="App">
 
-            <h1>Annual Turkey & Stuffing Lunch Attendence List</h1>
+            <h1 data-testid="h1id">Annual Turkey & Stuffing Lunch Attendence List</h1>
             <List employees={employees} />
             <AddToList employees={employees} setEmployees={setEmployees} />
 
