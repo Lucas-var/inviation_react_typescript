@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, act, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import "@testing-library/jest-dom";
 import { prettyDOM } from "@testing-library/dom"
 import App from './App';
@@ -10,8 +10,6 @@ test('To check if it renders a name', () => {
     console.log(prettyDOM(container));
     const linkElement = screen.getByText(/Lucas Vargas/i);
     expect(linkElement).toBeInTheDocument();
-
-
 });
 
 test('To check if it renders a name', () => {
@@ -26,5 +24,4 @@ test('To check if it renders a name', () => {
 
     const button = screen.getByRole("button")
     expect(button).toBeInTheDocument();
-
 });
