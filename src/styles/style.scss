@@ -75,12 +75,12 @@
             border: none;
             margin-top: 10px;
             border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: rgb(64, 161, 59);
+            &:hover {
+                background-color: rgb(64, 161, 59);
+            }
         }
         
+    }     
         
-    }
+    
 }
