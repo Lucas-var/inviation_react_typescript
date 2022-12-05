@@ -2,7 +2,6 @@
 %btn {
     padding: 0.5rem;
     cursor: pointer;
-    // background-color: rgb(39, 105, 37);
     font-weight: 700;
     color: white;
     border: none;
@@ -21,4 +20,4 @@
 
 .btn-secondary {
     @extend %btn;
-}
+} 
