@@ -17,7 +17,7 @@ const List = ({ employees }: { employees: IEmployee[] }):JSX.Element => {
     const renderList = (): JSX.Element[] => {
         return employees.map((employee, index) => {
             return (
-                <li key={index}className="List">
+                <li  key={index}className="List">
                     <div className="List-header">
                         <img className="img" src={employee.url} alt='employee_photo' />
                         <h2>{employee.name}</h2>

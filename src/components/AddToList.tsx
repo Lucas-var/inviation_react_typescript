@@ -72,7 +72,7 @@ const AddToList = ({ setEmployees }: IAddToListProps): JSX.Element => {
                 name="note"
                 onChange={handleChange}
             />
-            <button className="AddToList-button" onClick={handleClick}>Add to List</button>
+            <button onClick={handleClick}>Add to List</button>
 
         </div>
 
